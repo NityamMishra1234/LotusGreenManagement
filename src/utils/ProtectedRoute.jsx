@@ -3,11 +3,11 @@ import { Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const ProtectedRoute = ({ children }) => {
-  const { owner } = useSelector((state) => state.auth);
+  const { owner } = useSelector((state) => state.auth); // Make sure to access the state correctly
 
   // If not authenticated, redirect to the login page
   if (!owner) {
-    return <Navigate to="/Teacher_login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return children;
