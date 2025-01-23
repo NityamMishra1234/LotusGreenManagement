@@ -2,7 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // API base URL
-const API_URL = 'http://localhost:8000/api/users';
+const API_URL = 'https://lotugreenmanagementbackend.onrender.com/api/users';
+
 
 // Async thunk for registering owner
 export const registerOwner = createAsyncThunk('auth/register', async (ownerData, thunkAPI) => {
