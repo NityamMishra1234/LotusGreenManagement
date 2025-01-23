@@ -2,7 +2,7 @@ import axios from 'axios';
 import store from '../RTK/store'; // Adjust the path based on your project structure
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://lotugreenmanagementbackend.onrender.com/api',
 });
 
 axiosInstance.interceptors.request.use((config) => {
