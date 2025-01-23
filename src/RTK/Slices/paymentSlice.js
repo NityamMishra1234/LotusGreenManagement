@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000/api'; // Updated to your server's base URL
+const API_BASE_URL = 'https://lotugreenmanagementbackend.onrender.com/api'; // Updated to your server's base URL
 
 // Thunks
 
