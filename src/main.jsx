@@ -15,7 +15,7 @@ import Expenses from './components/Expenses/Expenses.jsx'
 import Requests from './components/Requests/Requests.jsx'
 import StudentLogin from './components/StudentLogin/StudentLogin.jsx'
 import Studentdashbord from './components/StudentDashbord/Studentdashbord.jsx'
-
+import ProtectedRoute from './utils/ProtectedRoute.jsx'
 const router = createBrowserRouter([
   {
     path:'/Signup',
@@ -27,22 +27,42 @@ const router = createBrowserRouter([
   },
   {
     path:"/DashBord",
-    element:<DashBord/>
+    
+    element:(
+      <ProtectedRoute>
+    <DashBord/>
+    </ProtectedRoute>)
   },{
     path:"/rooms",
-    element:<Room/>
+    element:(
+      <ProtectedRoute>
+    <Room/>
+    </ProtectedRoute>)
   },{
     path:"/students",
-    element:<Student/>
+    element:(
+      <ProtectedRoute>
+    <Student/>
+    </ProtectedRoute>)
   },{
     path:"/payments",
-    element:<Payment/>
+    element:(
+      <ProtectedRoute>
+    <Payment/>
+    </ProtectedRoute>)
   },{
     path:'/expenses',
-    element:<Expenses/>
+    element:(
+      <ProtectedRoute>
+    <Expenses/>
+    </ProtectedRoute>)
+    
   },{
     path:'/requests',
-    element:<Requests/>
+    element:(
+      <ProtectedRoute>
+    <Requests/>
+    </ProtectedRoute>)
   },{
     path:"/studentLogin",
     element:<StudentLogin/>
