@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000/api/expenses';
+const API_URL = 'https://lotugreenmanagementbackend.onrender.com/api/expenses';
 
 // Add a new expense
 export const addExpense = createAsyncThunk(
