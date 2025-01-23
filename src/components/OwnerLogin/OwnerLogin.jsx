@@ -56,7 +56,7 @@ const OwnerLogin = () => {
                         {loading ? 'Logging in...' : 'Login'}
                     </button>
                 </form>
-                <p className="text-center text-gray-600 mt-4">Don't have an account? <a href="/signup" className="text-blue-500 font-medium">Sign up</a></p>
+                <p className="text-center text-gray-600 mt-4">Don't have an account? <a href="/Signup" className="text-blue-500 font-medium">Sign up</a></p>
             </div>
         </div>
     );
